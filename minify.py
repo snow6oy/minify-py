@@ -89,6 +89,8 @@ console.log(hash);  // this is another one line comment
     print(testFile)
     print("")
     print(minify.reduce(testFile))
-  else:
+  elif (dirname):
     minify = Minify()
     print(minify.process(dirname))
+  else:
+    usage()
